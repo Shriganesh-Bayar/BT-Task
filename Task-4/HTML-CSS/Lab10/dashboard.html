@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+<!-- Normalize CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
+
+<!-- Bootstrap -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="dashboard.html">MyApp</a>
+
+      <ul class="navbar-nav flex-row gap-4">
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container mt-4">
+  <div class="row g-4">
+
+    <!-- Topics Explorer -->
+    <section class="col-md-8">
+      <div class="card p-3">
+        <h2>Topics Explorer</h2>
+
+        <details open>
+          <summary class="module-title">Module 1: Web Fundamentals</summary>
+
+          <details>
+            <summary class="unit-title">Unit 1: HTML</summary>
+            <ul class="topic-list">
+              <li>HTML Structure</li>
+              <li>Semantic Tags</li>
+              <li>Forms</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary class="unit-title">Unit 2: CSS</summary>
+            <ul class="topic-list">
+              <li>Selectors</li>
+              <li>Box Model</li>
+              <li>Flexbox</li>
+            </ul>
+          </details>
+
+        </details>
+      </div>
+    </section>
+
+    <!-- Labs Tracker -->
+    <section class="col-md-4">
+      <div class="card p-3">
+        <h2>Labs Tracker</h2>
+
+        <h4>HTML Basics</h4>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 100%">100%</div>
+        </div>
+        <p class="status-text mt-2">Completed</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>Dashboard</p>
+</footer>
+
+</body>
+</html>

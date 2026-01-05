@@ -1,0 +1,136 @@
+/* =====================
+   LAB 0 + Normalize Fixes
+===================== */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* =====================
+   Navigation (LAB 3, 9)
+===================== */
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* =====================
+   Forms (LAB 2, 6, 9)
+===================== */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+/* =====================
+   Cards (LAB 2, 3)
+===================== */
+.card {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   Dashboard (LAB 4)
+===================== */
+details {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   Gallery (LAB 7)
+===================== */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* =====================
+   UX Polish (LAB 9)
+===================== */
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* =====================
+   Dark Mode (LAB 9)
+===================== */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .card,
+.dark-mode details {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}

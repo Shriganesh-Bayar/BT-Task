@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+
+<!-- Normalize CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+/>
+
+<!-- Bootstrap -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+<!-- =====================
+     HEADER / NAVIGATION
+===================== -->
+<header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="dashboard.html">MyApp</a>
+
+      <ul class="navbar-nav flex-row gap-4">
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- =====================
+     GALLERY MODULE
+===================== -->
+<main class="container mt-4">
+
+  <h2 class="text-center mb-4">Image Gallery</h2>
+
+  <!-- Bootstrap Grid -->
+  <div class="row g-4">
+
+    <!-- Image 1 -->
+    <div class="col-md-4">
+      <div class="card gallery-card">
+        <img src="image1.png" alt="Gallery Image 1">
+        <div class="gallery-caption">
+          Nature Landscape
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-md-4">
+      <div class="card gallery-card">
+        <img src="image2.png" alt="Gallery Image 2">
+        <div class="gallery-caption">
+          City View
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-md-4">
+      <div class="card gallery-card">
+        <img src="image3.png" alt="Gallery Image 3">
+        <div class="gallery-caption">
+          Mountains
+        </div>
+      </div>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="col-md-4">
+      <div class="card gallery-card">
+        <img src="image4.png" alt="Gallery Image 4">
+        <div class="gallery-caption">
+          Sunset
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- =====================
+     FOOTER
+===================== -->
+<footer>
+  <p>Gallery Module</p>
+</footer>
+
+</body>
+</html>
